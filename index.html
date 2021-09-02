@@ -31,7 +31,7 @@
     <main>
         <div class="container">
             <h1 class="text-center pt-3 text-warning">Welcome to The Book Library </h1>
-        <!-- search field -->
+             <!-- search field -->
             <div class="mt-4 d-flex">
                     <form class="d-flex m-auto w-75 d-flex justify-content-center ">
                         <input class=" me-2" type="search" placeholder="Search" aria-label="Search"
@@ -43,21 +43,17 @@
             </div>
             <!-- error msg -->
             <div class="text-center mt-4 bg-warning" id="error-msg"></div>
+            <!-- spinner -->
             <div class="text-center mt-5">
-            <div class="spinner-border text-primary d-none" role="status"id="spinner">
+            <div class="spinner-border text-warning d-none" role="status"id="spinner">
                     <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
-          <!--    <div class="text-center mt-3 bg-warning"  id="error"></div>
-            <div id="show-details"></div>
--->
+            <!-- display element -->
             <div class="contain">
                 <div class="text-center bg-warning fs-1 my-3" id ="book-found"></div>
-                <div class=" row row-cols-1 row-cols-md-4 g-4 " id="contain"> 
-                  
-                </div>
+                <div class=" row row-cols-1 row-cols-md-4 g-4 " id="contain"> </div>
             </div> 
-         
         </div>
     </main>
     <script src="book.js"></script>
