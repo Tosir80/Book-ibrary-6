@@ -41,10 +41,10 @@ const displayData = (getData) => {
     div.innerHTML = `
          <div class="card p-2 text-center border-warning">
          <img src=" ${data.cover_i? `https://covers.openlibrary.org/b/id/${data.cover_i}-L.jpg` : `book img.jpg`}"> 
-         <h5 class="p-1"><span class="text-primary">Book:</span> ${data.title}</h5>
-         <h6 class="p-1"><span class="text-primary">Writer:</span>${data.author_name ? data.author_name[0] : 'Unknown!'}</h6>
-         <p class="p-1"><span class="text-primary">Publish-date:</span> ${ data.first_publish_year ? data.first_publish_year : 'Not given'}</p>
-         <p class="p-1"><span class="text-primary">Publisher:</span> ${data.publisher ? data.publisher[0] : 'Not given'}</p>
+         <h5 ><span class="text-primary">Book:</span> ${data.title}</h5>
+         <h6><span class="text-primary">Writer:</span>${data.author_name ? data.author_name[0] : 'Unknown!'}</h6>
+         <p><span class="text-primary">Publish-date:</span> ${ data.first_publish_year ? data.first_publish_year : 'Not given'}</p>
+         <p><span class="text-primary">Publisher:</span> ${data.publisher ? data.publisher[0] : 'Not given'}</p>
          </div>
         `;
     contain.appendChild(div);
